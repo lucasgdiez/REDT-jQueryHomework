@@ -3,3 +3,43 @@
 /// @group Home
 /// @author MS
 ////
+
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input-wrap{
+	padding: 10px;
+
+	input{
+		width: 300px;
+	}
+}
+
+.table-wrap{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	width: toem(700px);
+	height: toem(500px);
+	background-color: #67AAF9;
+	padding: 0 25px;
+}
+
+.table-body{
+	width: toem(600px);
+	height: toem(300px);
+	background-color: #FF70A6;
+	overflow-y:scroll;
+}
+
+.table-row{
+	background-color: white;
+	border: 2px solid black;
+	width: 100%;
+	height: 40px;
+	margin-bottom: 2px;
+}
