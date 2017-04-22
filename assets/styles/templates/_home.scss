@@ -25,20 +25,22 @@ main{
 	flex-direction: column;
 	width: toem(700px);
 	height: toem(500px);
-	background-color: #67AAF9;
+	background-color: #f15359;
 	padding: 0 25px;
+	border-radius: 15px;
+	box-shadow: 2px 3px 32px 0px  #dc5365;
 }
 
 .table-body{
 	width: toem(600px);
 	height: toem(300px);
-	background-color: #FF70A6;
+	background-color: #262a2d;
 	overflow-y:scroll;
+	border: 1px solid #262a2d;
 }
 
 .table-row{
-	background-color: white;
-	border: 2px solid black;
+	background-color: #438ef8;
 	width: 100%;
 	height: 40px;
 	margin-bottom: 2px;
