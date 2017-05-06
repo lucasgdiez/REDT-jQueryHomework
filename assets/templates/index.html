@@ -49,19 +49,31 @@
   <main role="main">
     <div class="table-wrap"> 
      <!--Form con label (for = idinput)en vez de h2 input/num button -->
-      <h2>add an item</h2>
-        <div class="input-wrap">
-          <input type="text" name="input">
-          <button type="button" id="button1">Add</button>
-        </div>
-      <h2>items</h2>
+      <div class="input-section">
+      <h2>Add an item</h2>
+        <form>
+          <label for="value">ID</label>
+          <input type="number" name="numberinput" placeholder="Enter your number :)" id="value"></input>
+          <input type="button" value="Add" class= "button" id="add-value"></input>
+          <input type="button" value="Remove Selected Elements" class= "button" id="remove-selected-value"></input>
+          <input type="button" value="Clear Elements" class= "button" id="clear-value"></input>
+        </form>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Element</th>
+          </tr>
+        </thead>
+        <tbody id="tabla" class="tWrap">
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+    </div>
       <!-- vem search -->
       <!-- table -> thead ->tr/closintag-> tbody->tr->td/ class=car__form id=autoForm -->
-        <div class="table-body">
-          <div class="table-row"></div>
-          <div class="table-row"></div>
-          <div class="table-row"></div>
-         </div>
   </main>
 
   <!-- /End of Content -->

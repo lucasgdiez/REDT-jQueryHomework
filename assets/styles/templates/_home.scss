@@ -4,19 +4,12 @@
 /// @author MS
 ////
 
+$table-background-color: #424651;
+
 main{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.input-wrap{
-	padding: 10px;
-	color: black;
-
-	input{
-		width: 300px;
-	}
 }
 
 .table-wrap{
@@ -24,26 +17,64 @@ main{
 	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	width: toem(700px); //100%
-	height: toem(500px);
-	background-color: #f15359;
+	height: toem(530px);
+	//background-color: $table-background-color;
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
 	padding: 0 25px;
 	border-radius: 15px;
-	box-shadow: 2px 3px 32px 0px  #dc5365;
+	animation: Gradient 12s ease infinite;
 }
 
-.table-body{
-	width: 100%;
-	height: toem(300px);
-	background-color: #262a2d;
-	overflow-y:auto;
-	border: 1px solid #262a2d;
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
 }
 
-.table-row{
-	background-color: #438ef8;
+.input-section{
 	width: 100%;
-	height: 40px;
-	margin-bottom: 2px;
+	text-align: center;
 }
+
+table{
+	height: 300px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	flex-wrap: flex;
+	th{
+		padding-top: 15px;
+	}
+}
+
+.input-section{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+	width: 100%;
+	flex-wrap: no-wrap;
+	padding: 5px 5px;
+}
+
+.tWrap{
+	height: 300px;
+	width: 100%;
+	overflow-y: hidden;
+}
+
+.color-change-2x {
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+	-moz-animation: color-change-2x 2s linear infinite alternate both;
+	animation: color-change-2x 2s linear infinite alternate both;
+}
+
