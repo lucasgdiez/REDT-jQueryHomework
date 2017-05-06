@@ -12,6 +12,7 @@ main{
 
 .input-wrap{
 	padding: 10px;
+	color: black;
 
 	input{
 		width: 300px;
@@ -23,7 +24,8 @@ main{
 	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
-	width: toem(700px);
+	flex-wrap: wrap;
+	width: toem(700px); //100%
 	height: toem(500px);
 	background-color: #f15359;
 	padding: 0 25px;
@@ -32,10 +34,10 @@ main{
 }
 
 .table-body{
-	width: toem(600px);
+	width: 100%;
 	height: toem(300px);
 	background-color: #262a2d;
-	overflow-y:scroll;
+	overflow-y:auto;
 	border: 1px solid #262a2d;
 }
 
